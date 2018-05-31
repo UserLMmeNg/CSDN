@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>注册</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/register.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+</head>
+<body>
+	<div id="register">
+		<div class="header"></div>
+		<div class="main">
+			<div class="container">
+				<div class="row wrap-login">
+					<div class="login-user col-xs-12 col-sm-6 col-md-5 col-lg-5">
+						<div class="login-part">
+							<h3>帐号注册</h3>
+							<div class="user-info">
+								<div class="user-pass">
+									<form>
+										<input type="text" class="phone-num" placeholder="输入手机号">
+										<input type="text" class="user-name" placeholder="输入用户名">
+										<input type="password" class="pass-word" placeholder="输入密码">
+										<input @click="click()" type="button" class="logging" value="立即注册">
+									</form>
+								</div>
+							</div>
+							<div class="line"></div>
+							<div class="third-part">
+								<span>第三方帐号登录</span>
+								<a href="#" class="qq"></a>
+								<a href="#" class="sina"></a>
+								<a href="#" class="baidu"></a>
+								<a href="#" class="cc"></a>
+								<a href="#" class="github"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/register.js"></script>
+</body>
+</html>

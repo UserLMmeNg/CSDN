@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的博客</title>
+	<link rel="stylesheet" type="text/css" href="./css/myBlog.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<div id="my_blog">
+		<header class="header">
+			<div class="h-nav  clearfix">
+				<div class="left">
+					<img src="./images/logo.png" alt="" class="logo">
+					<a href="" class="logo-name">创作中心</a>
+				</div>
+			    <div class="right">
+			    	<a href="" class="write">
+			    		<img src="./images/write.png" alt="">写博客
+			    	</a>
+			    	<a href="#" class="user-img"><img src="./images/head.jpg" alt=""></a>
+			    	<a href="" class="use-name">11111111</a>
+			    	<a href="#" class="out">退出</a>
+			    </div>
+			</div>
+		</header>
+		<div class="editbox">
+			<div class="edit-left">
+				<ul class="menu">
+					<li><a href="./produce.html">发布博客</a></li>
+					<li><a href="./myBlog.html">管理博客</a></li>
+				</ul>
+			</div>
+			<div class="edit-right">
+				<div class="right-title">文章管理</div>
+				<div class="right-nav">
+					<ul class="clearfix">
+						<li>全部</li>
+						<li>已发表</li>
+						<li>草稿箱</li>
+						<li>回收站</li>
+					</ul>
+				</div>
+				<div class="right-content">
+					<ul>
+						<li v-for="item in list">
+							<span>{{ item.title }}</span>
+							<span>{{ item.date }}</span>
+							<span>{{ item.read_num }}</span>
+							<span>{{ item.classify_name }}</span>
+							<button @click="deleteBtn(item)">删除</button>
+							<button @click="editBtn(item)">编辑</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<script type="text/javascript" src="./js/myBlog.js"></script>
+</body>
+</html>

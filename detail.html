@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/detail.css">
+</head>
+<body>
+	<div id="detail">
+		<div class="tool-bar clearfix">
+			<div class="tool-barL">
+				<div class="back">
+					<img src="./images/back.png">
+				</div>
+				<div class="logo">
+					<img src="./images/logo.png">
+				</div>
+			</div>
+			<div class="right-menu clearfix">
+				<a class="search-btn" href="#"><img src="./images/search-btn.png"></a>
+				<div class="login">
+					<a :class="isShow ? 'hide' : ''" class="login-in" href="login.html">
+						登录
+					</a>
+					<a :class="isShow ?  'show': ''" class="login-out" href="center.html">
+						<img src="./images/head.jpg">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="top_user_mod clearfix">
+				<div class="top_user_info clearfix">
+					<a class="clearfix" href="#">
+						<img src="./images/header-icon.jpg">
+						<span class="nick_name">{{ list.author_name }}</span>
+					</a>
+				</div>
+				<div class="follow">
+					<a href="#">关注</a>
+				</div>
+			</div>
+			<div v-for="item in " class="article">
+				<h1 class="article-title">{{ list.title }}</h1>
+				<div class="article-info">
+					<span class="type">转载</span>
+					<span class="create-time">{{ list.date }}</span>
+					<span class="date">阅读 6760</span>
+				</div>
+				<div class="article-content">
+					<div class="markdown_views">
+						<p>{{ list.content }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="operate">
+			<div class="like-btn">
+				<a href="#">
+					<img src="./images/like.png">
+					<span>点赞</span>
+					<span class="num">185</span>
+				</a>
+			</div>
+			<div class="comment-btn">
+				<a href="#">
+					<img src="./images/comment.png">
+					<span>评论</span>
+					<span class="num">42</span>
+				</a>
+			</div>
+			<div class="collect-btn">
+				<a @click="collectBtn" href="#">
+					<img src="./images/collect.png">
+					<span>收藏</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/detail.js"></script>
+</body>
+</html>

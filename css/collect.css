@@ -1,0 +1,175 @@
+html,body,img,a,ul,li,dl,dt,dd,h3,p,label,span,em {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 37.5px;
+}
+body {
+    background: #f7f8f9;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+a {
+	text-decoration: none;
+	color: #4f4f4f;
+}
+a:focus {
+	text-decoration: none;
+}
+ul,dl,dd {
+	list-style: none;
+}
+dl,dd,dt {
+	line-height: 1.2;
+}
+dl,dd,dt,label {
+	font-weight: 400;
+}
+.clearfix::after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+.tool-bar {
+	width: 100%;
+	font-size: 12px;
+	font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+	color: #333;
+	line-height: 18px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	padding: 14px 16px;
+	height: 52px;
+	-webkit-box-sizing: border-box;
+    display: flex;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+}
+.tool-barL {
+	float: left;
+	width: 67%;
+	height: 24px;
+	position: relative;
+}
+.menu {
+	float: left;
+	width: 50px;
+}
+.menu img {
+	width: 16px;
+	height: 16px;
+	margin-top: 4px;
+}
+.logo {
+	float: right;
+}
+.logo img {
+	width: 80px;
+	height: 20px;
+}
+.right-menu {
+	margin-left: auto;
+	float: right;
+}
+.search-btn img {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 12px;
+}
+.hide {
+	display: none;
+}
+.login {
+	float: right;
+	font-size: 0.36rem;
+}
+.login a {
+	font-size: 14px;
+	color: #C92027
+}
+.login-out img {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	border-radius: 12px;
+}
+.feedlist {
+	margin-top: 52px;
+}
+.feedlist li {
+	position: relative;
+	padding: 0.24rem 0.32rem 0.08rem 0.32rem;
+	border-bottom: 1px solid #d8d8d8;
+}
+.feedlist li h2 {
+	font-size: 0.34rem;
+	line-height: 0.48rem;
+	max-height: 0.96rem;
+	font-weight: bold;
+	overflow: hidden;
+}
+.feedlist li h2 a {
+	display: block;
+	color: #2f2f2f;
+	word-break: break-all;
+	outline: none;
+}
+.feedlist li .info-tag {
+	margin-right: -0.24rem;
+	font-size: 0.24rem;
+	display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.feedlist li .info-tag div {
+	line-height: 0.68rem;
+	display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.feedlist li .info-tag div a {
+	display: block;	
+}
+.feedlist li .info-tag .tag a{
+	color: #349edf;
+}
+.feedlist li .info-tag .user-name a {
+	max-width: 1.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.feedlist li .info-tag div.date {
+	color: #999;
+}
+.feedlist li .info-tag div.unlike {
+	margin-right: auto;
+}
+.feedlist li .info-tag div.unlike a.unlike-btn {
+	position: relative;
+    display: block;
+    width: 0.68rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+.feedlist li .info-tag div.unlike a.unlike-btn img {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: -1.2rem;
+    top: 0.3rem;
+}
+.info-tag div.after-dotted::after {
+	margin-right: 0.24rem;
+	content: "";
+	display: block;
+}

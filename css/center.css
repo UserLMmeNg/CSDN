@@ -1,0 +1,174 @@
+html,body,img,a,ul,li,dl,dt,dd,h3,p,label,span,em {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 37.5px;
+}
+body {
+    background: #f7f8f9;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+a {
+	text-decoration: none;
+	color: #4f4f4f;
+}
+a:focus {
+	text-decoration: none;
+}
+ul,dl,dd {
+	list-style: none;
+}
+dl,dd,dt {
+	line-height: 1.2;
+}
+dl,dd,dt,label {
+	font-weight: 400;
+}
+.clearfix::after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+.tool-bar {
+	width: 100%;
+	font-size: 12px;
+	font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+	color: #333;
+	line-height: 18px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	padding: 14px 16px;
+	height: 52px;
+	-webkit-box-sizing: border-box;
+    display: flex;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+}
+.tool-barL {
+	float: left;
+	width: 67%;
+	height: 24px;
+	position: relative;
+}
+.menu {
+	float: left;
+	width: 50px;
+}
+.menu img {
+	width: 16px;
+	height: 16px;
+	margin-top: 4px;
+}
+.logo {
+	float: right;
+}
+.logo img {
+	width: 80px;
+	height: 20px;
+}
+.right-menu {
+	margin-left: auto;
+	float: right;
+}
+.search-btn img {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 12px;
+}
+.hide {
+	display: none;
+}
+.login {
+	float: right;
+	font-size: 0.36rem;
+}
+.login a {
+	font-size: 14px;
+	color: #C92027
+}
+.login-out img {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	border-radius: 12px;
+}
+.my-main {
+	width: 100%;
+}
+.my-top {
+    background: #fff;
+    padding: .6rem;
+    width: 100%;
+    margin-top: 1.9rem;
+}
+.my-top .my-top-box dt {
+    float: left;
+    width: 1.7rem;
+}
+.my-top .my-top-box dt img {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    padding: .025rem;
+    border: .025rem solid #eee;
+}
+.my-top .my-top-box dd {
+	margin-left: 2.1rem;
+}
+.my-top .my-top-box dd .nickname {
+	font-size: 0.48rem;
+    color: #4f4f4f;
+    line-height: .6rem;
+    font-weight: 700;
+}
+.my-top .my-top-box dd .intro{
+    padding: .15rem 0 .25rem;
+    font-size: .35rem;
+    color: #9e9e9e;
+    line-height: .5rem;
+}
+.my-top .my-top-box dd .person-b {
+	font-size: 0;
+}
+.my-top .my-top-box dd .person-lab {
+	font-size: 0;
+	margin-bottom: 0;
+}
+.my-top .my-top-box dd .person-lab span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .4rem;
+    color: #9e9e9e;
+}
+.my-top .my-top-box dd .person-lab em {
+    color: #6ab3df;
+    margin-left: .2rem;
+}
+.my-wrap {
+    background-color: #fff;
+    margin: .4rem 0 .5rem;
+}
+.my-wrap .my-wrap-list li {
+	border-bottom: solid .025rem #ddd;
+    box-shadow: 0 0 0 0 #ddd, inset 0 0 0 0 #ddd;
+    padding: .3rem .6rem;
+}
+.my-wrap .my-wrap-list li:last-child {
+	border-bottom: 0;
+}
+.my-wrap .my-wrap-list li a {
+    width: 100%;
+    font-size: 0;
+	display: inline-block;
+}
+.my-wrap .my-wrap-list li a span {
+	font-size: .4rem;
+    color: #4f4f4f;
+}
